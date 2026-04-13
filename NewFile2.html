@@ -1,0 +1,236 @@
+
+<html lang="it" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khatereh Faizi | Full Site</title>
+    <style>
+        /* --- General Styles --- */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        /* --- Header (نوار نارنجی/زرد بالای صفحه) --- */
+        header {
+            background-color: #FFD700; /* رنگ زرد/نارنجی لوگو */
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5%;
+            position: fixed; /* چسبیده به بالای صفحه */
+            top: 0;
+            width: 90%;
+            z-index: 1000;
+            color: #000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .logo-area img {
+            height: 30px; /* لوگوی Webnode */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #444;
+        }
+
+        /* --- Hero Section --- */
+        #hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 10% 0 10%;
+            background: url('your-background.jpg') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        #hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.75); /* کمرنگ کردن پس‌زمینه */
+            z-index: 1;
+        }
+
+        .hero-container {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-text { flex: 1; }
+       
+        .hero-text h3 {
+            color: #FFD700;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            color: #FFD700;
+        }
+
+        .hero-text p {
+            max-width: 500px;
+            line-height: 1.7;
+            color: #ddd;
+            margin-top: 20px;
+        }
+
+        .hero-image img {
+            width: 350px;
+            height: 450px;
+            object-fit: cover;
+            border: 3px solid #FFD700;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #FFD700;
+            color: #000;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 30px;
+            border-radius: 2px;
+            
+        }
+
+      
+        .card:hover { border-color: #FFD700; }
+        /* --- Sections Style --- */
+        section { padding: 100px 10%; border-bottom: 1px solid #222; }
+        h2 { color: #FFD700; text-transform: uppercase; margin-bottom: 30px; }
+
+        /* --- About & Skills --- */
+        .flex-container { display: flex; gap: 60px; }
+        .flex-item { flex: 1; }
+        .skills-list { list-style: none; padding: 0; }
+        .skills-list li { margin-bottom: 10px; }
+        .skills-list li::before { content: "• "; color: #FFD700; font-weight: bold; }
+
+        /* --- Footer & Map --- */
+        footer { padding: 50px 10%; background: #0a0a0a; }
+        .map-frame { width: 100%; height: 300px; border: 0; filter: grayscale(1) invert(0.9); margin-bottom: 30px; }
+        .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+    </style>
+</head>
+<body>
+
+    <!-- نوار بالای صفحه (Header) -->
+    <header>
+        <div class="logo-area">
+            <img src="https://placeholder.com" alt="Logo"> <!-- جایگزین لوگو -->
+            <span>Khatereh faizi</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">Chi siamo</a></li>
+                <li><a href="#programma">Servizi</a></li>
+                <li><a href="#footer">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- بخش اول: Hero -->
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h3>Ciao, sono Khatereh!</h3>
+                <h1>Khatereh faizi</h1>
+                <p>Benvenuti nel mio spazio personale. Lavoro nel campo del web design e amo creare esperienze digitali belle e funzionali. Qui potete vedere i miei progetti, le mie competenze e la mia visione del mondo della tecnologia.</p>
+                <a href="#" class="btn">Contatti</a>
+            </div>
+            <div class="hero-image">
+                <img src="fotomansito.jpg" alt="Profile Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش دوم: About & Skills -->
+    <section id="about">
+        <div class="flex-container">
+            <div class="flex-item">
+                <h2>Chi siamo</h2>
+                <p>Descrizione della tua attività o del tuo profilo professionale...</p>
+            </div>
+            <div class="flex-item">
+                <h2>Elenco delle competenze</h2>
+                <ul class="skills-list">
+                    <li>Sviluppo Web (HTML, CSS)</li>
+                    <li>Programmazione Java</li>
+                    <li>Microsoft Access Database</li>
+                    <li>Design Grafico (Canva)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+ <!-- بخش سوم: برنامه‌ها -->
+    <section id="programma">
+        <h2>Programma</h2>
+        <div class="cards">
+            <div class="card"><h3>Sviluppo Siti</h3><p>Creazione siti web.</p></div>
+            <div class="card"><h3>Consulenza</h3><p>Supporto tecnico.</p></div>
+            <div class="card"><h3>Content</h3><p>Gestione social.</p></div>
+        </div>
+    </section>
+    <!-- بخش آخر: فوتر و نقشه -->
+    <footer id="footer">
+        <iframe class="map-frame" src="https://google.com"></iframe>
+        <div class="footer-grid">
+            <div>
+                <h2>Contattami</h2>
+                <p>📍 TS, via madonna del mare 3</p>
+                <p>📞 +39 351 113 1478</p>
+                <p>✉️ faizikhatereh4@gmail.com</p>
+            </div>
+            <div>
+                <h3>Newsletter</h3>
+                <input type="email" placeholder="Email" style="width: 80%; padding: 10px; margin-bottom: 10px; background: #222; border: 1px solid #444; color: #fff;">
+                <button class="btn" style="border: none; cursor: pointer; width: 85%;">Invia</button>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+ 
